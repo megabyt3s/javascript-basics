@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: whitesmoke;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#grid-container {
+  width: 800px;
+  height: 800px;
+  border: 1px solid #999;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), 1fr);
+  grid-template-rows: repeat(var(--grid-size), 1fr);
+}
+
+.square {
+  background-color: whitesmoke;
+}
+
+#resize-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #ffa6ed;
+}
+
+#resize-button:hover {
+  background-color: #bde0fe;
+}
